@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Sharing App</title>
+    <style>
+      video {
+        width: 100%;
+        height: auto;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Screen Sharing App</h1>
+    <button id="startShare">Share Screen</button>
+    <video id="video" autoplay></video>
+    <video id="remoteVideo" autoplay></video>
+    <!-- Added for remote video -->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
